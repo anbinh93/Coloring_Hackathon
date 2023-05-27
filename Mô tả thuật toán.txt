@@ -1,0 +1,29 @@
+1, Các thư viện được sử dụng:
+Chương trình khai báo các thư viện cần thiết để hoạt động, bao gồm iostream (để nhập/xuất 
+dữ liệu), fstream (để đọc/ghi tệp), vector (để sử dụng vector), set (để sử dụng tập hợp) 
+và algorithm (để sử dụng các hàm thuật toán như max_element).
+
+2, Hàm DSATUR
+Hàm dsatur nhận đầu vào là một ma trận kề biểu diễn đồ thị và trả về một vector chứa màu 
+của từng đỉnh. Hàm này thực hiện thuật toán DSATUR để tô màu đồ thị. Các bước chính của 
+thuật toán trong hàm này bao gồm:
+	a, Hàm dsatur nhận đầu vào là một ma trận kề biểu diễn đồ thị và trả về một vector 
+	chứa màu của từng đỉnh. Hàm này thực hiện thuật toán DSATUR để tô màu đồ thị. 
+	Các bước chính của thuật toán trong hàm này bao gồm:
+	b, Hàm dsatur nhận đầu vào là một ma trận kề biểu diễn đồ thị và trả về một vector 
+	chứa màu của từng đỉnh. Hàm này thực hiện thuật toán DSATUR để tô màu đồ thị. Các 
+	bước chính của thuật toán trong hàm này bao gồm:
+		  i. Chọn đỉnh chưa được tô màu có độ bão hòa lớn nhất và bậc lớn nhất (nếu
+		  có nhiều đỉnh cùng độ bão hòa).
+    		  ii. Tìm màu nhỏ nhất chưa được sử dụng bởi các đỉnh kề của đỉnh được chọn.
+  		  iii. Tô màu đỉnh được chọn bằng màu tìm được và cập nhật trạng thái của 
+		  các đỉnh kề chưa được tô màu.
+
+3, Hàm main:
+   . Hàm main:
+	Hàm main thực hiện các bước sau:
+	  a. Đọc dữ liệu đồ thị từ tệp "dothi.txt" và chuyển đổi đồ thị thành ma trận kề.
+	  b. Gọi hàm dsatur để tô màu đồ thị và lưu kết quả vào vector colors.
+	  c. Tìm màu lớn nhất được sử dụng trong quá trình tô màu (số màu cần thiết).
+	  d.  Ghi kết quả vào tệp "dothitomau.txt", bao gồm số màu cần thiết và màu của 
+	      từng đỉnh.
